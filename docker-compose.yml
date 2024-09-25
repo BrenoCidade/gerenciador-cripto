@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Civic123
+      POSTGRES_DB: dbcripto
+    ports:
+      - '5433:5432'
+    container_name: gerenciador-cripto_develop
